@@ -1,2 +1,7 @@
 tasks:
   - init: npm install && npm run build
+vscode:
+  extensions:
+    - mubaidr.vuejs-extension-pack@1.1.5:XmDLAyc3HGdLlkXiv6zDUw==
+    - sdras.vue-vscode-extensionpack@0.2.0:J/GITGpgUKWSiKL4CL8Pug==
+    - jcbuisson.vue@0.1.5:iY3UUCX2mmoIw5ODWkEcyw==
