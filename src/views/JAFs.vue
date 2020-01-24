@@ -24,6 +24,16 @@
       </v-col>
 
     </v-row>
+    <v-btn
+              fixed
+              dark
+              fab
+              bottom
+              right
+              color="pink"
+            >
+              <v-icon>mdi-plus</v-icon>
+            </v-btn>
     </v-container>
 </template>
 

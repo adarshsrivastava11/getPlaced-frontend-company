@@ -9,6 +9,8 @@ import Intro from '@/views/Intro';
 import Login from '@/views/Login';
 import Signup from '@/views/Signup';
 
+import CollegeStudents from '@/views/CollegeStudents';
+
 Vue.use(Router);
 
 export default new Router({
@@ -27,9 +29,14 @@ export default new Router({
             {
                 path: 'jafs',
                 component: JAFs
-            }
+            },
+            {
+                path: 'college-students/:CID/:UID',
+                component: CollegeStudents
+            },
         ]
     },
+    
 
     {
         path: '/',

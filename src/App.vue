@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-content>
       <v-container
         fluid
@@ -13,13 +12,7 @@
 </template>
 
 <script>
-import NavigationBar from '@/components/NavigationBar';
 
-export default {
-    components: {
-        NavigationBar
-    }
-}
 </script>
 <style>
 #keep .v-navigation-drawer__border {
