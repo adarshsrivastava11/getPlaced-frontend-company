@@ -1,5 +1,11 @@
 <template>
-<v-container>
+<v-container  class="fill-height"
+        fluid>
+ <v-row
+          align="center"
+          justify="center"
+        >
+        <v-col class="text-center">
 <v-card>
     <v-card-title>
       Nutrition
@@ -18,6 +24,8 @@
       :search="search"
     ></v-data-table>
   </v-card>
+  </v-col>
+  </v-row>
   </v-container>
 </template>
 

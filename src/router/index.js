@@ -10,6 +10,8 @@ import Login from '@/views/Login';
 import Signup from '@/views/Signup';
 
 import CollegeStudents from '@/views/CollegeStudents';
+import CollegeLanding from '@/views/CollegeLanding';
+import CollegeDetails from '@/views/CollegeDetails';
 
 Vue.use(Router);
 
@@ -24,16 +26,40 @@ export default new Router({
         children: [
             {
                 path: 'colleges',
-                component: Colleges
+                component: Colleges,
+            },
+            {
+                path: 'college/:CID/:NAME',
+                component: CollegeLanding,
+                children: [
+                    {
+                        path: '',
+                        component: CollegeDetails
+                    },
+                    {
+                        path: 'students',
+                        component: CollegeStudents
+                    }
+                ]
             },
             {
                 path: 'jafs',
                 component: JAFs
             },
             {
-                path: 'college-students/:CID/:UID',
-                component: CollegeStudents
-            },
+                path: 'jaf/:JAFID/:NAME',
+                component: JAFLanding,
+                children: [
+                    {
+                        path: '',
+                        component: JAFDetails
+                    },
+                    {
+                        path: 'applicants',
+                        component: JAFApplicants
+                    }
+                ]
+            }
         ]
     },
     
