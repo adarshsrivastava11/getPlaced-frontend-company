@@ -1,17 +1,17 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Colleges from '@/views/Colleges';
-import JAFs from '@/views/JAFs';
-import Dashboard from '@/views/Dashboard';
+import Colleges from '@/views/Dashboard/College/Colleges';
+import JAFs from '@/views/Dashboard/JAF/JAFs';
+import Dashboard from '@/views/Dashboard/Dashboard';
 
-import Landing from '@/views/Landing';
-import Intro from '@/views/Intro';
-import Login from '@/views/Login';
-import Signup from '@/views/Signup';
+import Landing from '@/views/Landing/Landing';
+import Intro from '@/views/Landing/Intro';
+import Login from '@/views/Landing/Login';
+import Signup from '@/views/Landing/Signup';
 
-import CollegeStudents from '@/views/CollegeStudents';
-import CollegeLanding from '@/views/CollegeLanding';
-import CollegeDetails from '@/views/CollegeDetails';
+import CollegeStudents from '@/views/Dashboard/College/CollegeStudents';
+import CollegeLanding from '@/views/Dashboard/College/CollegeLanding';
+import CollegeDetails from '@/views/Dashboard/College/CollegeDetails';
 
 Vue.use(Router);
 
