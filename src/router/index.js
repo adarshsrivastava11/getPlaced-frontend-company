@@ -13,6 +13,10 @@ import CollegeStudents from '@/views/Dashboard/College/CollegeStudents';
 import CollegeLanding from '@/views/Dashboard/College/CollegeLanding';
 import CollegeDetails from '@/views/Dashboard/College/CollegeDetails';
 
+import JAFApplicants from '@/views/Dashboard/JAF/JAFApplicants';
+import JAFLanding from '@/views/Dashboard/JAF/JAFLanding';
+import JAFDetails from '@/views/Dashboard/JAF/JAFDetails';
+
 Vue.use(Router);
 
 export default new Router({

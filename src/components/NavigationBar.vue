@@ -6,7 +6,7 @@
       color="amber"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <span class="title ml-3 mr-5"><span class="font-weight-light">get</span>&nbsp;Placed</span>
+      <span class="title ml-3 mr-5"><span class="font-weight-light">get</span>Placed</span>
       <v-text-field
         solo-inverted
         flat
@@ -22,29 +22,17 @@
       v-model="drawer"
       app
       clipped
-      color="grey lighten-4"
+      color="dark"
     >
       <v-list
         dense
-        class="grey lighten-4"
+        class="dark"
       >
         <template v-for="(item, i) in items">
-          <v-row
-            v-if="item.heading"
-            :key="i"
-            align="center"
-          >
-            <v-col cols="6">
-              <v-subheader v-if="item.heading">
-                {{ item.heading }}
+              <v-subheader v-if="item.heading" :key="i">
+               <b> {{ item.heading }} </b>
               </v-subheader>
-            </v-col>
-            <v-col
-              cols="6"
-              class="text-right"
-            >
-            </v-col>
-          </v-row>
+          
           <v-divider
             v-else-if="item.divider"
             :key="i"
@@ -61,7 +49,7 @@
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title class="grey--text">
-                {{ item.text }}
+              <router-link :to="item.url"  class="grey--text"> {{ item.text }} </router-link>
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -79,21 +67,21 @@
     data: () => ({
       drawer: null,
       items: [
-        { icon: 'lightbulb-outline', text: 'Notes' },
-        { icon: 'reminder', text: 'Reminders' },
+        { icon: 'lightbulb-outline', text: 'Newsfeed', url: '/dashboard' },
+        { icon: 'reminder', text: 'Colleges', url: '/dashboard/colleges' },
         { divider: true },
-        { heading: 'Labels' },
-        { icon: 'plus', text: 'Create new label' },
+        { heading: 'JAF' },
+        { icon: 'plus', text: 'Create New JAFs', url: '/dashboard/jafs' },
+        { icon: 'format-list-text', text: 'View All JAFs', url: '/dashboard/jafs' },
         { divider: true },
-        { icon: 'archive', text: 'Archive' },
-        { icon: 'delete', text: 'Trash' },
-        { divider: true },
-        { icon: 'settings', text: 'Settings' },
-        
-        { icon: 'help', text: 'Help' },
-        { icon: 'application', text: 'App downloads' },
-        { icon: 'keyboard', text: 'Keyboard shortcuts' },
+        { icon: 'archive', text: 'Profile', url: '/' },
       ],
     }),
   }
 </script>
+
+<style scoped>
+a {
+    text-decoration: none;
+}
+</style>

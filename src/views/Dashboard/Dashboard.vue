@@ -7,7 +7,9 @@
         fluid
         class="grey lighten-4 fill-height"
       >
+      <transition>
             <router-view />
+            </transition>
       </v-container>
     </v-content>
   </div>
