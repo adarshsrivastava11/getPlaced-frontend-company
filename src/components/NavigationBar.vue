@@ -67,7 +67,7 @@
     data: () => ({
       drawer: null,
       items: [
-        { icon: 'lightbulb-outline', text: 'Newsfeed', url: '/dashboard' },
+        { icon: 'lightbulb-outline', text: 'Newsfeed', url: '/dashboard/news' },
         { icon: 'reminder', text: 'Colleges', url: '/dashboard/colleges' },
         { divider: true },
         { heading: 'JAF' },

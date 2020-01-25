@@ -1,7 +1,6 @@
 <template>
     <v-container>
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-        <router-view />
-        </v-parallax>
+    
+        <router-view />  
     </v-container>
 </template>

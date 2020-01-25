@@ -17,6 +17,8 @@ import JAFApplicants from '@/views/Dashboard/JAF/JAFApplicants';
 import JAFLanding from '@/views/Dashboard/JAF/JAFLanding';
 import JAFDetails from '@/views/Dashboard/JAF/JAFDetails';
 
+import News from '@/views/Dashboard/News';
+
 Vue.use(Router);
 
 export default new Router({
@@ -28,6 +30,9 @@ export default new Router({
         name: 'Dashboard',
         component: Dashboard,
         children: [
+            {   path: '',
+                component: News
+            },
             {
                 path: 'colleges',
                 component: Colleges,
